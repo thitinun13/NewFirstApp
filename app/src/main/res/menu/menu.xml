@@ -4,4 +4,7 @@
     <item
         android:id="@+id/aboutFragment"
         android:title="about" />
+    <item
+        android:id="@+id/contact"
+        android:title="contact" />
 </menu>
