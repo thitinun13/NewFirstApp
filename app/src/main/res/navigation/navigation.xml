@@ -13,4 +13,8 @@
         android:id="@+id/titleFragment"
         android:name="com.example.mobile.newfirstapp.TitleFragment"
         android:label="TitleFragment" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.mobile.newfirstapp.ContactFragment"
+        android:label="ContactFragment" />
 </navigation>

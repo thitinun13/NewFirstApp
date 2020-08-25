@@ -1,4 +1,5 @@
 package com.example.mobile.newfirstapp.db
 
-class Contact {
+class User {
+    
 }
