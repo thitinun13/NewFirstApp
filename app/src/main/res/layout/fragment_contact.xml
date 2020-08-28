@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#BEDFF7">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+        <variable
+            name="contactViewModel"
+            type="com.example.mobile.newfirstapp.ContactViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".contact.ContactFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F7E8C9"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/TextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/abel"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/TextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/abel"
+                android:hint="Phone"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/buttonInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee_shade"
+                android:onClick="@{()->contactViewModel.onContactAdd()}"
+                android:shadowColor="#FFFFFF"
+                android:text="Send" />
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D9EDE7"
+                android:text="@{contactViewModel.contactString}" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

@@ -8,7 +8,8 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.mobile.newfirstapp.AboutFragment"
-        android:label="AboutFragment" />
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/titleFragment"
         android:name="com.example.mobile.newfirstapp.TitleFragment"
@@ -16,5 +17,6 @@
     <fragment
         android:id="@+id/contactFragment"
         android:name="com.example.mobile.newfirstapp.ContactFragment"
-        android:label="ContactFragment" />
+        android:label="ContactFragment"
+        tools:layout="@layout/fragment_contact" />
 </navigation>
